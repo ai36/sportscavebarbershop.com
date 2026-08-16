@@ -33,4 +33,4 @@ This project keeps a full docs/ trail (business requirements, architecture, desi
 
 - [docs/overview.md](docs/overview.md) · [docs/business-requirements.md](docs/business-requirements.md) · [docs/system-requirements.md](docs/system-requirements.md)
 - [docs/architecture.md](docs/architecture.md) · [docs/design-system.md](docs/design-system.md) · [docs/image-credits.md](docs/image-credits.md)
-- [BACKLOG.md](BACKLOG.md) · [CHANGELOG.md](CHANGELOG.md) · [CLAUDE.md](CLAUDE.md)
+- [BACKLOG.md](BACKLOG.md) · [CHANGELOG.md](CHANGELOG.md)
