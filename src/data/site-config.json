@@ -1,0 +1,25 @@
+{
+  "brandName": "Sports Cave Barbershop",
+  "shortName": "SPORTS CAVE",
+  "tagline": "Game-Day Ready",
+  "established": "2024",
+  "areas": ["Happy Valley", "Gresham", "Clackamas"],
+  "region": "Oregon, US",
+  "phone": "(503) 555-0142",
+  "phoneNote": "Placeholder number (555 exchange, reserved for fictional use) — no real barbershop onboarded yet.",
+  "address": "Address to be confirmed once a location is finalized.",
+  "hours": {
+    "mon": "Closed",
+    "tue": "9:00 AM – 7:00 PM",
+    "wed": "9:00 AM – 7:00 PM",
+    "thu": "9:00 AM – 7:00 PM",
+    "fri": "9:00 AM – 7:00 PM",
+    "sat": "9:00 AM – 6:00 PM",
+    "sun": "Closed"
+  },
+  "socials": {
+    "instagram": "#",
+    "telegram": "#"
+  },
+  "bookingSlotIntervalMinutes": 30
+}

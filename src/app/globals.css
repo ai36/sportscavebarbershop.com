@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "react-day-picker/style.css";
+
+/*
+  Design tokens ported from archive/stitch-mockups/gridiron_groom/DESIGN.md
+  ("Gridiron & Groom" system). Keep names in sync with that file if the
+  palette changes — see docs/design-system.md for the rationale.
+*/
+@theme {
+  --color-background: #121414;
+  --color-on-background: #e2e2e2;
+
+  --color-surface: #121414;
+  --color-surface-dim: #121414;
+  --color-surface-bright: #38393a;
+  --color-surface-container-lowest: #0d0e0f;
+  --color-surface-container-low: #1a1c1c;
+  --color-surface-container: #1e2020;
+  --color-surface-container-high: #282a2b;
+  --color-surface-container-highest: #333535;
+  --color-surface-variant: #333535;
+
+  --color-on-surface: #e2e2e2;
+  --color-on-surface-variant: #e4beb1;
+
+  --color-primary: #ffb59a;
+  --color-on-primary: #5a1b00;
+  --color-primary-container: #ff5c00;
+  --color-on-primary-container: #ffffff;
+
+  --color-outline: #ab897d;
+  --color-outline-variant: #5b4137;
+
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+
+  --font-display: var(--font-anton), sans-serif;
+  --font-body: var(--font-hanken-grotesk), sans-serif;
+  --font-label: var(--font-jetbrains-mono), monospace;
+
+  --text-display-lg: 72px;
+  --text-display-lg--line-height: 80px;
+  --text-display-lg--letter-spacing: 0.02em;
+  --text-display-lg--font-weight: 400;
+
+  --text-headline-lg: 48px;
+  --text-headline-lg--line-height: 56px;
+  --text-headline-lg--letter-spacing: 0.04em;
+  --text-headline-lg--font-weight: 400;
+
+  --text-headline-lg-mobile: 32px;
+  --text-headline-lg-mobile--line-height: 40px;
+  --text-headline-lg-mobile--font-weight: 400;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 400;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.08em;
+  --text-label-sm--font-weight: 500;
+
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 48px;
+  --spacing-container-max: 1280px;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+/* Subtle film-grain texture used across every mockup — keeps the "Cave" mood off pure flat black. */
+.texture-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* "Beveled metal" edge used on cards/panels in the source design system. */
+.beveled-edge {
+  border-top: 1px solid var(--color-surface-bright);
+  border-left: 1px solid var(--color-surface-bright);
+}
+
+/* Hard-edged button press, replacing soft shadows per the brand's "no ambient shadow" rule. */
+.btn-press {
+  transition:
+    transform 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+.btn-press:active {
+  transform: translate(2px, 2px);
+  box-shadow: none !important;
+}
+
+/*
+  react-day-picker theme: re-point its CSS variables at our tokens instead of
+  reimplementing layout. Square-ish day cells (not circles) to match the
+  brand's "no pill shapes" rule from DESIGN.md.
+*/
+.rdp-root {
+  --rdp-accent-color: var(--color-primary-container);
+  --rdp-accent-background-color: var(--color-surface-container-high);
+  --rdp-day-width: 40px;
+  --rdp-day-height: 40px;
+  --rdp-day_button-width: 36px;
+  --rdp-day_button-height: 36px;
+  --rdp-day_button-border-radius: var(--radius-DEFAULT);
+  --rdp-day_button-border: 1px solid transparent;
+  --rdp-selected-border: 2px solid var(--color-primary);
+  --rdp-today-color: var(--color-primary);
+  --rdp-disabled-opacity: 0.35;
+  --rdp-outside-opacity: 0.4;
+  --rdp-nav_button-width: 2rem;
+  --rdp-nav_button-height: 2rem;
+  color: var(--color-on-surface);
+}
+.rdp-month_caption {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.rdp-weekday {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.rdp-day_button {
+  font-family: var(--font-body);
+}
+.rdp-day_button:hover:not([disabled]) {
+  background-color: var(--color-surface-container-high);
+  border-color: var(--color-outline);
+}
+.rdp-selected .rdp-day_button {
+  background-color: var(--color-primary-container);
+  color: #fff;
+}
+.rdp-chevron {
+  fill: var(--color-primary);
+}

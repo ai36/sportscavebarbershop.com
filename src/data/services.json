@@ -1,0 +1,59 @@
+[
+  {
+    "id": "mvp-cut",
+    "category": "haircuts",
+    "name": "The MVP Cut",
+    "price": 45,
+    "durationMinutes": 45,
+    "description": "Precision clipper and shear work tailored to your head shape. Includes hot towel neck shave and styling."
+  },
+  {
+    "id": "skin-fade",
+    "category": "haircuts",
+    "name": "Skin Fade",
+    "price": 55,
+    "durationMinutes": 50,
+    "description": "Seamless bald fade blending into the top length. Requires extra time for meticulous detailing.",
+    "popular": true
+  },
+  {
+    "id": "buzz-cut",
+    "category": "haircuts",
+    "name": "The Buzz",
+    "price": 25,
+    "durationMinutes": 20,
+    "description": "One length all over. Simple, clean, and fast. Includes edge up and neck shave."
+  },
+  {
+    "id": "hot-towel-shave",
+    "category": "beard-shaves",
+    "name": "Hot Towel Shave",
+    "price": 40,
+    "durationMinutes": 30,
+    "description": "Traditional straight razor shave with pre-shave oil, hot lather, and essential oil infused hot towels."
+  },
+  {
+    "id": "beard-trim",
+    "category": "beard-shaves",
+    "name": "Beard Trim & Line Up",
+    "price": 30,
+    "durationMinutes": 20,
+    "description": "Shaping and debulking of the beard with a straight razor finish on the cheeks and neck."
+  },
+  {
+    "id": "the-shutout",
+    "category": "beard-shaves",
+    "name": "The Shutout",
+    "price": 35,
+    "durationMinutes": 30,
+    "description": "Classic straight razor head shave with hot lather and soothing aftershave."
+  },
+  {
+    "id": "full-roster",
+    "category": "packages",
+    "name": "The Full Roster",
+    "price": 65,
+    "durationMinutes": 60,
+    "description": "MVP Cut plus a premium beard trim, shaping, and conditioning oil treatment."
+  }
+]

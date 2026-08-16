@@ -1,0 +1,29 @@
+[
+  {
+    "id": "marcus-vance",
+    "name": "Marcus \"Iron\" Vance",
+    "title": "Master Barber",
+    "specialties": ["Skin Fades", "Straight Razor"],
+    "experienceYears": 12,
+    "quote": "Precision isn't an option, it's the only standard. Every cut is a blueprint executed flawlessly.",
+    "photo": "/images/master-marcus.jpg"
+  },
+  {
+    "id": "david-reyes",
+    "name": "David \"The Duke\" Reyes",
+    "title": "Senior Barber",
+    "specialties": ["Classic Cuts", "Beard Sculpting"],
+    "experienceYears": 8,
+    "quote": "A good haircut is temporary. Confidence is permanent. I deliver both.",
+    "photo": "/images/master-david.jpg"
+  },
+  {
+    "id": "elias-thorne",
+    "name": "Elias Thorne",
+    "title": "Barber",
+    "specialties": ["Modern Textures", "Lineups"],
+    "experienceYears": 5,
+    "quote": "Blending classic techniques with modern edge. Your head is my canvas.",
+    "photo": "/images/master-elias.jpg"
+  }
+]

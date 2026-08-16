@@ -1,0 +1,6 @@
+# Third-party content — keep byte-for-byte reformattable/diffable against upstream.
+.claude/
+archive/
+
+# Generated, not hand-edited.
+drizzle/meta/
